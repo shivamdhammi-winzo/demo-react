@@ -19,7 +19,7 @@ class App extends Component {
   render(){
     let whatToShow = this.state.visileApp ? <User/> : <Todo_list/>;
     return (
-          <div>
+          <div className="App">
             <button onClick={this.handleClick}>Toggle Button</button>
             {whatToShow}
           </div>
