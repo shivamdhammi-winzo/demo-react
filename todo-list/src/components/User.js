@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import Todo_list from "./Todo-list";
 
 export default class User extends Component {
 
     state = {
-        people: []
+        people: [],
     }
 
     async componentDidMount(){
@@ -18,9 +19,10 @@ export default class User extends Component {
     }
     
     
+    
     render(){
         const peopleJsx = this.state.people.map((person) => (
-            <div key={person.login.uuid}>
+            <div key={person.login.uuid} >
                 <img src={person.picture.large} alt="user pic" />
                 <div>{person.name.titile}</div>
                 <div>{person.name.first}</div>
@@ -28,8 +30,11 @@ export default class User extends Component {
 
             </div>
         ));
+        
         return(
-            <div>{peopleJsx}</div>
+            <div>
+                {peopleJsx}
+            </div>
         )
     }
 }
