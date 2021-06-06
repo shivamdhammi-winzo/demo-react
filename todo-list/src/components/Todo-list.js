@@ -24,7 +24,7 @@ export default class Todo_list extends Component {
                         complete: !todo.complete,
                     };
                 }else{
-                    return todo
+                    return todo;
                 }
             })
         })
