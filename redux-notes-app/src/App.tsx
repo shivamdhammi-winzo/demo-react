@@ -44,6 +44,7 @@ import * as types from "./type";
 import * as actionTypes from "./store/actionTypes";
 
 const App: React.FC = () => {
+  //null check laga lena hai
   const articles: readonly types.IArticle[] = useSelector(
     (state: types.ArticleState) => state.articles,
     shallowEqual
@@ -51,6 +52,7 @@ const App: React.FC = () => {
 
   const dispatch: Dispatch<any> = useDispatch();
 
+  //dont render when no change
   const saveArticle = React.useCallback(
     (article: types.IArticle) => dispatch(addArticle(article)),
     [dispatch]
