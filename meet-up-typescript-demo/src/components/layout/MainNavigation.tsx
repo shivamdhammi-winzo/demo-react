@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
 
-export const MainNavigation: React.FC = (props) => {
+const MainNavigation: React.FC = (props) => {
   return (
     <div>
       <MainNavigation />
@@ -9,3 +9,5 @@ export const MainNavigation: React.FC = (props) => {
     </div>
   );
 };
+
+export default MainNavigation;

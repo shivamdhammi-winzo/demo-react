@@ -1,7 +1,7 @@
-import { MainNavigation } from "./MainNavigation";
+import MainNavigation from "./MainNavigation";
 import classes from "./Layout.module.css";
 
-export const Layout: React.FC = (props) => {
+const Layout: React.FC = (props) => {
   return (
     <div>
       <MainNavigation />
@@ -9,3 +9,5 @@ export const Layout: React.FC = (props) => {
     </div>
   );
 };
+
+export default Layout;

@@ -7,6 +7,7 @@ interface Props {
   title: string;
   address: string;
   description: string;
+  id: number;
 }
 
 const MeetupItem: React.FC<Props> = (props) => {
