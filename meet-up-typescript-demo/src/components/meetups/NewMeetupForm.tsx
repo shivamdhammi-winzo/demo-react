@@ -5,7 +5,7 @@ import classes from "./NewMeetupForm.module.css";
 import Card from "../ui/Card";
 
 interface MeetupData {
-  tittle: string | undefined;
+  title: string | undefined;
   image: string | undefined;
   address: string | undefined;
   description: string | undefined;
@@ -28,7 +28,7 @@ const NewMeetupForm: React.FC<{
     const enteredDescription = descriptionInputRef.current?.value;
 
     const meetupData = {
-      tittle: enteredTitle,
+      title: enteredTitle,
       image: enteredImage,
       address: enteredAddress,
       description: enteredDescription,

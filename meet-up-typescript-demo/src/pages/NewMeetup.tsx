@@ -2,7 +2,7 @@ import { useHistory } from "react-router-dom";
 import NewMeetupForm from "../components/meetups/NewMeetupForm";
 
 interface MeetupData {
-  tittle: string | undefined;
+  title: string | undefined;
   image: string | undefined;
   address: string | undefined;
   description: string | undefined;
