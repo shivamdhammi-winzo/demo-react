@@ -18,6 +18,7 @@ const NewMeetupForm: React.FC<{
   const imageInputRef = useRef<HTMLInputElement | null>(null);
   const addressInputRef = useRef<HTMLInputElement | null>(null);
   const descriptionInputRef = useRef<HTMLTextAreaElement | null>(null);
+  console.log("runnig test");
 
   function submitHandler(event: any) {
     event.preventDefault();
@@ -33,7 +34,7 @@ const NewMeetupForm: React.FC<{
       address: enteredAddress,
       description: enteredDescription,
     };
-    console.log(meetupData);
+    console.log("testit data" + meetupData);
 
     props.onAddMeetup(meetupData);
   }

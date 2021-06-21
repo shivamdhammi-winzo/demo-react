@@ -1,0 +1,28 @@
+.div {
+  width: 90vw;
+  height: 90vh;
+  max-height: 100%;
+  object-fit: fill;
+  padding: 5rem auto;
+}
+
+.content {
+  text-align: center;
+  color: #ffffff;
+  text-decoration-color: #ffffff;
+  font-family: sans-serif;
+  font-size: x-large;
+  margin-left: 3rem;
+  width: 100%;
+  text-align: start;
+  margin-right: 5rem;
+  padding-right: 30rem;
+  text-align: justify;
+}
+
+.h1 {
+  color: #ffffff;
+  text-decoration-color: #ffffff;
+  margin-left: 3rem;
+  width: 100%;
+}

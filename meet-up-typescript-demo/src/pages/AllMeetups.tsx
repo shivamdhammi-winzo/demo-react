@@ -36,6 +36,8 @@ const AllMeetups = () => {
       });
   }, []);
 
+  console.log("learn test");
+
   if (isLoading) {
     return (
       <section>

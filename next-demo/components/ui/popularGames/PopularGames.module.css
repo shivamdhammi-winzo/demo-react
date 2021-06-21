@@ -1,0 +1,10 @@
+.container {
+  width: 10vw;
+  margin: 3rem;
+  display: flex;
+}
+
+.title {
+  font-size: xx-large;
+  text-align: center;
+}
